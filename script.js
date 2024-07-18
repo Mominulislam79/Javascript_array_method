@@ -20,5 +20,18 @@ console.log(Browser_History);
 let lastvisited_page=Browser_History.pop();
 console.log(lastvisited_page);
 console.log(Browser_History);
+// Practice Example -03: Implementing an Undo Feature
+// In a text editor, you might implement an undo feature where each action is pushed onto a stack, and popping from the stack undoes the last action.
+
+let action_taken=[];
+// Performing actions
+action_taken.push('typed "Hello"');
+action_taken.push('typed "World"');
+action_taken.push('typed "World"');
+// undo last action
+let lastaction=action_taken.pop();
+console.log(lastaction);
+// Final page
+console.log(action_taken);
 
 
