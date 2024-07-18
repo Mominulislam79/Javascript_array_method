@@ -7,4 +7,18 @@ console.log(users);
 let Lastuser= users.pop();
 console.log(Lastuser);
 console.log(users);
+//Practice Example-02: push() and pop() method
+// Managing a Browser History Stack
+let Browser_History=[];
+
+Browser_History.push('home.html');
+Browser_History.push('about.html');
+Browser_History.push('contact.html');
+console.log(Browser_History);
+
+
+let lastvisited_page=Browser_History.pop();
+console.log(lastvisited_page);
+console.log(Browser_History);
+
 
