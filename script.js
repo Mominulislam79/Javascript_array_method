@@ -63,5 +63,22 @@ let last_song=play_list.pop();
 console.log(`The last song is ${last_song}`);
 console.log(play_list);
 
+//Practice Example -06: Tracking User Navigation
+// In a single-page application (SPA), you might track user navigation to implement a custom back button.
+let nav_stack=[];
+// navigation through the app
+nav_stack.push('/home');
+nav_stack.push('/profile');
+nav_stack.push('/setting');
+nav_stack.push('/contact');
+nav_stack.push('/course');
+
+console.log(nav_stack);
+
+// Back navigation
+let last_nav_page=nav_stack.pop();
+console.log(`The last navigated page is ${last_nav_page}`);
+console.log(nav_stack);
+
 
 
