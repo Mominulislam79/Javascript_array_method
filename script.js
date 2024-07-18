@@ -33,5 +33,18 @@ let lastaction=action_taken.pop();
 console.log(lastaction);
 // Final page
 console.log(action_taken);
+//Practice Example -04: Handling a Call Center Queue
+let callstack=[];
+
+// Incoming call
+callstack.push('Call from customer "Bill"');
+callstack.push('Call from customer "Joe"');
+callstack.push('Call from customer "Biden"');
+console.log(callstack);
+// Handling the most recent call
+let latest_call = callstack.pop();
+console.log(`The last call is :${latest_call}`);
+console.log(callstack);
+
 
 
