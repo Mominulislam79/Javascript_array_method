@@ -34,6 +34,7 @@ console.log(lastaction);
 // Final page
 console.log(action_taken);
 //Practice Example -04: Handling a Call Center Queue
+// In a call center application, you might handle incoming calls using a stack where each new call is pushed onto the stack, and the most recent call is handled first.
 let callstack=[];
 
 // Incoming call
@@ -45,6 +46,22 @@ console.log(callstack);
 let latest_call = callstack.pop();
 console.log(`The last call is :${latest_call}`);
 console.log(callstack);
+//Practice Example -05: Managing a Playlist
+// In a music player application, you might manage a playlist where songs are added to the end of the playlist and the last song can be removed.
+let play_list=[];
+// At first add songs to the play_list
+play_list.push('Song of "Ed Sheeran"');
+play_list.push('Song of "Taylor Swift"');
+play_list.push('Song of "Dua Lipa"');
+play_list.push('Song of "Adele"');
+play_list.push('Song of "Ariana Grande"');
+
+console.log(play_list);
+
+// Now remove the last song from the play_list
+let last_song=play_list.pop();
+console.log(`The last song is ${last_song}`);
+console.log(play_list);
 
 
 
